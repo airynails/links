@@ -1,0 +1,343 @@
+
+/* =====================================
+   CINDERELLA AESTHETIC
+   Celeste pastel - Cristal - Brillos
+===================================== */
+
+
+/* CONFIGURACIÓN GENERAL */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    font-family: 'Georgia', serif;
+    color: #526d91;
+
+    /* IMAGEN DE FONDO */
+
+    background-image:
+        linear-gradient(
+            rgba(220, 239, 255, 0.12),
+            rgba(220, 239, 255, 0.12)
+        ),
+        url("assets/fondo.jpg");
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 35px 15px;
+
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+/* BRILLITOS DEL FONDO */
+
+body::before {
+    content: "✧     ⋆       ✦       ˚      ✧";
+
+    position: fixed;
+
+    top: 8%;
+    left: 5%;
+
+    width: 90%;
+
+    color: rgba(255,255,255,0.85);
+
+    font-size: 25px;
+    letter-spacing: 35px;
+
+    pointer-events: none;
+
+    animation: sparkle 4s ease-in-out infinite;
+
+    z-index: 2;
+}
+
+body::after {
+    content: "✦      ˚      ✧       ⋆      ✦";
+
+    position: fixed;
+
+    bottom: 10%;
+    right: 0;
+
+    width: 90%;
+
+    color: rgba(255,255,255,0.8);
+
+    font-size: 23px;
+    letter-spacing: 30px;
+
+    pointer-events: none;
+
+    animation: sparkle 5s ease-in-out infinite reverse;
+
+    z-index: 2;
+}
+
+
+/* CONTENEDOR PRINCIPAL */
+
+.container {
+    width: 100%;
+    max-width: 430px;
+
+    text-align: center;
+
+    position: relative;
+    z-index: 1;
+
+    padding: 30px 24px;
+
+    background: rgba(255,255,255,0.36);
+
+    border: 1px solid rgba(255,255,255,0.85);
+
+    border-radius: 24px;
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 40px rgba(115,160,205,0.15),
+        inset 0 0 20px rgba(255,255,255,0.55);
+}
+
+
+/* PERFIL */
+
+.profile {
+    margin-bottom: 35px;
+}
+
+.profile img {
+    width: 130px;
+    height: 130px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #ffffff;
+
+    box-shadow:
+        0 0 0 3px #b9ddff,
+        0 0 18px rgba(255,255,255,0.95),
+        0 0 35px rgba(139,190,255,0.6);
+
+    margin-bottom: 18px;
+
+    transition: 0.4s ease;
+}
+
+.profile img:hover {
+    transform: scale(1.06);
+
+    box-shadow:
+        0 0 0 4px #a9d6ff,
+        0 0 25px white,
+        0 0 45px #9dcfff;
+}
+
+
+/* NOMBRE */
+
+.profile h1 {
+    font-size: 27px;
+
+    color: #527ba8;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        0 2px 5px rgba(255,255,255,0.9);
+
+    letter-spacing: 1px;
+}
+
+
+/* DESCRIPCIÓN */
+
+.profile p {
+    font-size: 14px;
+
+    color: #7899bc;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* CONTENEDOR DE BOTONES */
+
+.links-container {
+    display: flex;
+    flex-direction: column;
+
+    gap: 15px;
+}
+
+
+/* BOTONES */
+
+.link-button {
+    display: block;
+
+    width: 100%;
+
+    padding: 17px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        rgba(255,255,255,0.95),
+        rgba(213,235,255,0.9)
+    );
+
+    border: 1px solid rgba(255,255,255,0.95);
+
+    border-radius: 12px;
+
+    color: #6288b2;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    letter-spacing: 0.6px;
+
+    box-shadow:
+        0 5px 15px rgba(118,166,211,0.15),
+        inset 0 1px 5px white;
+
+    transition: all 0.35s ease;
+}
+
+
+/* BRILLO AL PASAR EL MOUSE */
+
+.link-button::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: -120%;
+
+    width: 70%;
+    height: 100%;
+
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255,255,255,0.9),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+
+    transition: 0.6s ease;
+}
+
+.link-button:hover::before {
+    left: 150%;
+}
+
+
+/* EFECTO HOVER */
+
+.link-button:hover {
+    transform: translateY(-4px);
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #c7e6ff
+    );
+
+    color: #4779ae;
+
+    border-color: #ffffff;
+
+    box-shadow:
+        0 8px 22px rgba(111,164,216,0.3),
+        0 0 15px rgba(255,255,255,0.9);
+}
+
+
+/* PIE DE PÁGINA */
+
+footer {
+    margin-top: 35px;
+
+    font-size: 12px;
+
+    color: #8ca9c8;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* ANIMACIÓN DE BRILLITOS */
+
+@keyframes sparkle {
+
+    0%, 100% {
+        opacity: 0.45;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(-8px);
+    }
+
+}
+
+
+/* ADAPTACIÓN PARA CELULARES */
+
+@media (max-width: 480px) {
+
+    body {
+        background-attachment: scroll;
+        background-position: center center;
+    }
+
+    .container {
+        padding: 25px 18px;
+    }
+
+    .profile img {
+        width: 115px;
+        height: 115px;
+    }
+
+    .profile h1 {
+        font-size: 24px;
+    }
+
+    .link-button {
+        padding: 16px;
+    }
+
+}
