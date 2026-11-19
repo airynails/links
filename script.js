@@ -4,13 +4,16 @@
 // ===================================
 
 const profile = {
+
     name: "Tu nombre",
 
     description: "Bienvenido a mi espacio",
 
-    picture: "assets/perfil.jpg",
+    // FOTO DE PERFIL
+    picture: "perfil.jpg",
 
     footer: "© 2026 - Todos los derechos reservados"
+
 };
 
 
@@ -29,7 +32,6 @@ const links = [
         name: "TikTok",
         url: "https://www.tiktok.com/@ary.nails?_r=1&_t=ZS-9BWQJJHUGwr"
     },
-
 
     {
         name: "WhatsApp",
