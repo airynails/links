@@ -5,7 +5,7 @@
 
 const profile = {
 
-    name: "Tu nombre",
+    name: "AIRY",
 
     description: "Bienvenido a mi espacio",
 
