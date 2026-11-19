@@ -35,7 +35,7 @@ const links = [
 
     {
         name: "✧˖°WhatsApp˖ ࣪ ⊹",
-        url: "https://wa.me/51977536247?text=Holiii%21%20%E2%9C%A7%CB%96%C2%B0%20Quiero%20que%20mis%20u%C3%B1itas%20tambi%C3%A9n%20tengan%20su%20momento%20de%20magia.%20%CB%96%20%E0%A3%AA%20%E2%8A%B9"
+        url: "https://wa.me/51993709331?text=Holiii%21%20%E2%9C%A7%CB%96%C2%B0%20Quiero%20que%20mis%20u%C3%B1itas%20tambi%C3%A9n%20tengan%20su%20momento%20de%20magia.%20%CB%96%20%E0%A3%AA%20%E2%8A%B9"
     }
 
 ];
